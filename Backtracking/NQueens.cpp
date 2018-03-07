@@ -1,3 +1,10 @@
+/*
+ *
+ * Backtracking based algorithm which finds all possible solutions to n-queens
+ * problem.
+ *
+ */
+
 #include <iostream>
 #include <vector>
 #include <cmath>
