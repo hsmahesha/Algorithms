@@ -35,7 +35,7 @@ void printSoln() {
 
 bool isLegal(int j, int r) {
     for (int i = 0; i < r; i++) {
-        // the column `j` is already selected? (or) diagonal entries?
+        // The column `j` is already selected? (or) diagonal entries?
         if (soln[i] == j || abs(soln[i] - j) == abs(r - i))
             return false;
     }
@@ -58,6 +58,6 @@ void nQueens(int r) {
 }
 
 int main(int args, char* argv[]) {
-    initSolnVector();   // initilize the solution vector to -1
-    nQueens(0);   // initiate backtracking by passing first queen
+    initSolnVector();   // Initilize the solution vector to -1
+    nQueens(0);   // Initiate backtracking by passing first queen
 }
