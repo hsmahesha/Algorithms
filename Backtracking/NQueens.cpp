@@ -39,7 +39,6 @@ void printSoln() {
 /*
  * Checks if the queen `r' can be placed in an index (r, j)
  */
-
 bool isLegal(int j, int r) {
     for (int i = 0; i < r; i++) {
         // The column `j` is already selected? (or) diagonal entries?
@@ -49,6 +48,10 @@ bool isLegal(int j, int r) {
     return true;
 }
 
+/*
+ * Finds all possible solutions through systematic recursive exploration of
+ * solution space
+ */
 void nQueens(int r) {
     // All the N queens are successfully placed on the board?
     if (r == N) {
