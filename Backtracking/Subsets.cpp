@@ -35,18 +35,18 @@ void printSoln() {
  * Finds all possible subsets of a given set through systematic recursive
  * exploration of solution space
  */
-void Subset(int i) {
+void genSubsets(int i) {
     if (i == N) {
         printSoln();
     } else {
         for (int j = 0; j <= 1; j++) {
             soln[i] = j;
-            Subset(i+1);
+            genSubsets(i+1);
         }
     }
 }
 
 int main(int args, char* argv[]) {
     // Initiate backtracking
-    Subset(0);
+    genSubsets(0);
 }
