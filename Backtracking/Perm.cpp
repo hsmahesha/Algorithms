@@ -1,7 +1,7 @@
 /*
  *
- * Backtracking based algorithm which finds all possible permutation of a given
- * set (distinct) integers of size `N`.
+ * Backtracking based algorithm which finds all possible permutations of a given
+ * set of first `N` natural numbers.
  *
  */
 
