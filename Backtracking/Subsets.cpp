@@ -26,7 +26,7 @@ void printSoln() {
     cout << "{ ";
     for (int i = 0; i < N; i++) {
         if (soln[i] == 1)
-           cout << i+1 << " ";
+            cout << i+1 << " ";
     }
     cout << "}" << endl;
 }
@@ -40,8 +40,8 @@ void Subset(int i) {
         printSoln();
     } else {
         for (int j = 0; j <= 1; j++) {
-           soln[i] = j;
-           Subset(i+1);
+            soln[i] = j;
+            Subset(i+1);
         }
     }
 }
