@@ -29,7 +29,7 @@ void printSoln() {
 }
 
 /*
- *  Swaps the elements at the index i, j of array `iset'
+ *  Swaps the elements at the indecies `i` and `j` of array `iset'
  */
 void swap(int i, int j) {
     int t = iset[i];
