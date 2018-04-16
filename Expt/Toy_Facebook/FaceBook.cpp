@@ -20,7 +20,6 @@ class Node {
             this->name = name;
             this->friends = set<Node*>();
         }
-
 };
 
 class FaceBook {
@@ -39,7 +38,6 @@ class FaceBook {
         }
 
     public:
-
         void checkFriends(string n1, string n2) {
             int id1, id2;
 
@@ -56,7 +54,6 @@ class FaceBook {
                 cout << "User " << n2 << " does not exist\n";
                 return;
             }
-
 
             set<Node*> s1 = usersInfo[id1]->friends;
             set<Node*> s2 = usersInfo[id2]->friends;
@@ -135,7 +132,6 @@ class FaceBook {
 		}
 
         void constructGraphDatabase(string ifile) {
-            // Open input csv file
             fstream fh = fstream(ifile);
             if (!fh.is_open()) {
                 cout << "error: failed to open input csv file" << endl;
