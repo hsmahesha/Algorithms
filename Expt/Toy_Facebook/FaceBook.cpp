@@ -73,7 +73,6 @@ class FaceBook {
                 cout << common[i]->name << " ";
             }
             cout << endl;
-
         }
 
         void printFriendsList() {
@@ -143,7 +142,6 @@ class FaceBook {
                 this->constructFriendsList(tokens);
             }
         }
-
 };
 
 FaceBook* constructFBGraph(int argc, char* argv[]) {
